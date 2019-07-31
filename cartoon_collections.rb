@@ -14,8 +14,8 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(calls_long)
-  calls_long.index { |i|
-    if calls_long[i].size > 4
+  calls_long.each_with_index { |i, index|
+    if i.size > 4
       # binding.pry
       return true
     else
