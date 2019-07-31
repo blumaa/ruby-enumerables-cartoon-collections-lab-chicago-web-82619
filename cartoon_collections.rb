@@ -7,7 +7,8 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.collect { |x| x.capitalize }
+  new_planeteer_calls = Array.new
+  planeteer_calls.collect { |x| new_planeteer_calls << "#{x.capitalize}!" }
   # binding.pry
   
 end
