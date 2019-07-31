@@ -22,9 +22,13 @@ def long_planeteer_calls(calls_long)
   calls_long.any? { |word| word.length > 4 } #=> true
 end
 
-def find_the_cheese(ingredients)
-  # the array below is here to help
+def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  ingredients.each { |food| 
-    food = ""
+  match = nil
+  cheese_types.each { |cheese| 
+  if(food.include?(cheese))
+    return cheese
+  end
+  }
+ return match
 end
