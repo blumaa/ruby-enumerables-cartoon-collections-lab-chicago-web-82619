@@ -10,7 +10,7 @@ def summon_captain_planet(planeteer_calls)
   new_planeteer_calls = Array.new
   planeteer_calls.collect { |x| new_planeteer_calls << "#{x.capitalize}!" }
   # binding.pry
-  
+  new_planeteer_calls
 end
 
 def long_planeteer_calls# code an argument here
