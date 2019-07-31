@@ -16,7 +16,7 @@ end
 def long_planeteer_calls(calls_long)
   calls_long.index { |i|
     if calls_long[i].size > 4
-      binding.pry
+      # binding.pry
       return true
     else
        return false
